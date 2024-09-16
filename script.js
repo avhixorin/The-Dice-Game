@@ -1,3 +1,4 @@
+document.getElementById("rollDiceBtn").addEventListener("click", function(){
 let randomNum1 = Math.floor((Math.random()*6)+1);
 let randomNum2 = Math.floor((Math.random()*6)+1);
 let imgSrc = document.querySelector("img").getAttribute("src");
@@ -48,3 +49,4 @@ else if(randomNum1 === randomNum2){
 else{
     document.querySelector("h1").innerHTML="Player 2 Won";   
 }
+});
